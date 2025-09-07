@@ -8,5 +8,8 @@ def collatz(number):
             print(number)
     return number
 
-number = int(input("please enter a number: "))
-collatz(number)
+try:
+    number = int(input("please enter a number: "))
+    collatz(number)
+except ValueError:
+    print('please enter a number, not letter')
