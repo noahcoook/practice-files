@@ -1,0 +1,126 @@
+﻿
+.       - Any Character Except New Line
+\d      - Digit (0-9)
+\D      - Not a Digit (0-9)
+\w      - Word Character (a-z, A-Z, 0-9, _)
+\W      - Not a Word Character
+\s      - Whitespace (space, tab, newline)
+\S      - Not Whitespace (space, tab, newline)
+
+\b      - Word Boundary
+\B      - Not a Word Boundary
+^       - Beginning of a String
+$       - End of a String
+
+[]      - Matches Characters in brackets
+[^ ]    - Matches Characters NOT in brackets
+|       - Either Or
+( )     - Group
+
+Quantifiers:
+*       - 0 or More
++       - 1 or More
+?       - 0 or One
+{3}     - Exact Number
+{3,4}   - Range of Numbers (Minimum, Maximum)
+
+
+#### Sample Regexs ####
+
+[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+
+
+Level 1 – Basics
+
+#Find every line that contains the word Springfield. | Springfield
+
+Match all email addresses that end with .com. | [a-zA-Z0-9.-]+@[a-zA-z0-9+-]+\.com
+
+Extract every phone number that contains exactly 10 digits.
+
+Match all uppercase words (all caps only).
+
+Find every street address that includes “St.”.
+
+🔹 Level 2 – Intermediate
+
+Match any email that starts with a number.
+
+Extract all ZIP codes (5 digits or 5+4).
+
+Find every line that has both a name and an email.
+
+Match all lines containing non-English letters (like ñ, ü, あ).
+
+Extract all usernames (the part before @) from email addresses.
+
+🔹 Level 3 – Trickier Patterns
+
+Find all phone numbers with parentheses around the area code.
+
+Match emails that use symbols like +, ", or ;.
+
+Extract all lines where the email is invalid (double dots, missing domain, etc.).
+
+Match all addresses with PO Box.
+
+Extract all domain names (the part after @).
+
+🔹 Level 4 – Advanced
+
+Find every line with multiple consecutive dots (..).
+
+Extract all lines containing an IP address inside the email.
+
+Match every email that belongs to a country code TLD (.de, .es, .cn, etc.).
+
+Find every line that looks like a name with an apostrophe or hyphen.
+
+Extract any address that contains a number followed by a street name.
+
+🔹 Level 5 – Expert
+
+Match all lines containing Unicode symbols (☃, 🙂, etc.).
+
+Extract all emails that are missing a TLD (e.g., mike@).
+
+Find every line that includes both letters and numbers mixed together (like R2-D2).
+
+Extract all addresses located in London only.
+
+Match any line that looks like structured data (e.g., has <, >, @, or [ ]).
+
+Easy Tier
+
+Find all phone numbers that start with 555
+Find all email addresses ending in .com
+Find all instances of "Dr." | [D|M][r|rs]+\.
+Find all instances of "Mrs."
+Find all phone numbers in parentheses format like (555) 123-4567
+
+Medium Tier
+
+Find all email addresses from the "example.com" domain
+Find all phone numbers that contain the digits "123" in sequence
+Find all names that start with "Professor"
+Find all email addresses that have exactly 3 characters before the @ symbol
+Find phone numbers that end with the digits "4567"
+Find all instances where someone teaches a specific subject (the word "teaches" appears)
+Find email addresses from .edu domains
+
+Hard Tier
+
+Find all phone numbers in ANY format (parentheses, dashes, or just digits)
+Find all complete email addresses (the entire address, not just partial matches)
+Find all full names that come after titles (like "Dr. Sarah Mitchell" - capture the full name)
+Find lines that contain BOTH a phone number AND an email address
+Find all phone numbers where the area code is NOT 555
+Find email addresses where the username contains a period (like john.peterson@example.com)
+
+Expert Tier
+
+Find all lines where a person's title, name, AND contact method appear in a specific pattern
+Extract just the domain names from all email addresses (without the @ symbol or anything before it)
+Find phone numbers where the last four digits are all the same
+Find email addresses where the username and domain both start with the same letter
+Find all instances where someone has multiple contact methods listed on the same line
+Find names where the first and last name start with the same letter
