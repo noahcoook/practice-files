@@ -37,7 +37,7 @@ Match all email addresses that end with .com. | [a-zA-Z0-9.-]+@[a-zA-z0-9+-]+\.c
 
 Extract every phone number that contains exactly 10 digits.
 
-Match all uppercase words (all caps only).
+Match all uppercase words (all caps only). | \w[A-Z]+
 
 Find every street address that includes “St.”.
 
@@ -51,7 +51,7 @@ Find every line that has both a name and an email.
 
 Match all lines containing non-English letters (like ñ, ü, あ).
 
-Extract all usernames (the part before @) from email addresses.
+Extract all usernames (the part before @) from email addresses. | [A-Za-z0-9+._-]+@
 
 🔹 Level 3 – Trickier Patterns
 

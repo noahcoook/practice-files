@@ -2,10 +2,10 @@ import  re
 
 
 
-with open(r"C:\Users\Noah\source\repos\practice-files\python\regexData.txt", "r", encoding="utf-8") as f:
+with open(r"./python/regexData.txt", "r", encoding="utf-8") as f:
     data = f.read()
 
-pattern = re.compile(r'/d{1,10}')
+pattern = re.compile(r'[A-Za-z0-9+._-]+@')
 
 matches = pattern.finditer(data)
 
