@@ -13,7 +13,6 @@
     <li><strong>python/</strong> — a folder containing Python scripts or experiments</li>
     <li><strong>.gitignore</strong> — Git ignore configuration</li>
     <li><strong>README.md</strong> — the Markdown readme file (this repository’s existing README)</li>
-    <li><strong>test.log</strong> — a log file, likely produced by a test or script run</li>
   </ul>
 
   <h2>Languages & Technologies</h2>
